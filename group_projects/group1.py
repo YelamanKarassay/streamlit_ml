@@ -27,7 +27,7 @@ def main():
     st.write("This app predicts the Iris flower species based on its features.")
 
     # Display Iris flower image
-    st.image('../examples/iris.jpg', caption='Iris Flower', use_column_width=True)
+    st.image('examples/iris.jpg', caption='Iris Flower', use_column_width=True)
 
     # Input features on the main page
     st.header('Input Features')
@@ -51,11 +51,11 @@ def main():
     # Display specific flower image based on prediction
     st.subheader('Predicted Iris Flower')
     if prediction[0] == 'setosa':
-        st.image('../examples/iris_setosa.png', caption='Iris Setosa', use_column_width=True)
+        st.image('examples/iris_setosa.png', caption='Iris Setosa', use_column_width=True)
     elif prediction[0] == 'versicolor':
-        st.image('../examples/iris_versicolor.png', caption='Iris Versicolor', use_column_width=True)
+        st.image('examples/iris_versicolor.png', caption='Iris Versicolor', use_column_width=True)
     elif prediction[0] == 'virginica':
-        st.image('../examples/iris_verginica.png', caption='Iris Virginica', use_column_width=True)
+        st.image('examples/iris_verginica.png', caption='Iris Virginica', use_column_width=True)
 
 if __name__ == "__main__":
     main()

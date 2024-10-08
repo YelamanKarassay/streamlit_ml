@@ -50,7 +50,7 @@ def main():
         return href
 
     # Provide an example image to download
-    example_image = Image.open('../examples/exmple_group_3.png').convert('L')
+    example_image = Image.open('examples/exmple_group_3.png').convert('L')
     resized_example_image = example_image.resize((100, 100))
     st.image(resized_example_image, caption='Example Image for Testing', width=150)
     st.markdown(get_image_download_link(resized_example_image, "example_digit.png", "Download Example Digit Image"), unsafe_allow_html=True)
